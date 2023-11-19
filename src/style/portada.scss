@@ -1,0 +1,60 @@
+
+.titulo-portada > img{
+    width: 100%;
+    
+}
+.boton-play-portada{
+  width: 80px;
+  height: 40px;
+  
+  padding: 10px 20px;
+  font-size: 16px;
+  border: #3498db;
+  color: #ffffff;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  background-color: red;
+  box-shadow: 0 4px 6px rgba(73, 69, 69, 0.1);
+  transition: background-color 0.3s ease;
+}
+
+/* Estilos para el estado activo */
+
+.carta-pregunta {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+  
+  .titulo {
+    
+    color: grey;
+    font-size: 20px;
+  }
+  
+  
+  @media (max-width: 600px) {
+    .titulo {
+        font-size: 16px;
+    }
+
+    .boton-play-portada {
+      width: 60px;
+      height: 30px;
+      padding: 8px 16px;
+      font-size: 14px;
+    }
+
+    .titulo-portada > img {
+       
+        max-width: 100%; 
+        height: auto; 
+    }
+
+    .carta-pregunta {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}

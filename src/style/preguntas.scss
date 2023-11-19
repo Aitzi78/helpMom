@@ -1,0 +1,90 @@
+.list-container {
+    margin-top: 20px;
+    position: relative;
+  
+    h2 {
+      font-size: 24px;
+      margin-bottom: 45px;
+    }
+  
+    .list-group-item {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 18px;
+      margin-top: 15px;
+      margin-bottom: 10px;
+      padding: 10px;
+      background-color: #f8f9fa;
+      border: 1px solid #dee2e6;
+      border-radius: 8px;
+  
+      .action-buttons {
+        button {
+          margin-right: 10px;
+          padding: 5px 10px;
+          cursor: pointer;
+  
+          &.btn-actualizar {
+            background-color: #007bff;
+            color: #fff;
+            border: 1px solid #007bff;
+          }
+  
+          &.btn-borrar {
+            background-color: #dc3545;
+            color: #fff;
+            border: 1px solid #dc3545;
+          }
+        }
+      }
+    }
+    .custom-btn-nueva-pregunta {
+        position: absolute;
+        top: 0;
+        right: 0;
+        margin: 10px;
+        background-color: #28a745;
+        color: #fff;
+        border: 1px solid #28a745;
+        padding: 10px 20px;
+        cursor: pointer;
+        text-decoration: none;
+    
+        &:hover {
+          background-color: #218838;
+        }
+      }
+    .btn-nueva-pregunta {
+      position: absolute;
+      top: 0;
+      right: 0;
+      margin: 10px;
+      background-color: #28a745;
+      color: #fff;
+      border: 1px solid #28a745;
+      padding: 10px 20px; // Aumenta el tamaño del botón
+      cursor: pointer;
+      text-decoration: none; // Elimina el subrayado de los enlaces
+  
+      &:hover {
+        background-color: #218838; // Color de fondo al pasar el ratón
+      }
+    }
+    @media (max-width: 600px) {
+      .list-group-item {
+        font-size: 16px;
+    }
+
+    .action-buttons button {
+        padding: 4px 8px;
+    }
+
+    .custom-btn-nueva-pregunta,
+    .btn-nueva-pregunta {
+        padding: 8px 16px;
+    }
+    }
+
+  }
+  

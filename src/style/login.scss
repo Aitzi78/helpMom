@@ -1,0 +1,79 @@
+.contenedor-login {
+    width: 100;
+    max-width: 500px;
+    
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    
+    margin: 0 auto;
+    margin-top: 100px;
+    background-color: lightgray;
+    text-align: center;
+  }
+  
+  .titulo-login {
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    color:grey;
+  }
+  
+  .login-usuario {
+    display: block;
+    margin-bottom: 8px;
+    width: 100px;
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    color: grey;
+  }
+  .login-usuario:hover{
+    background-color:#698aff;
+  }
+  
+  
+  
+  .login-input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 16px;
+    box-sizing: border-box;
+    
+  }
+  
+  .login-boton {
+    background-color: #686566;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+  }
+  
+ 
+  .login-boton:hover {
+      background-color: #698aff; /* Cambia el color al hacer hover */
+      box-shadow: 0 0 10px #698aff; /* Agrega un efecto de sombra al hacer hover */
+      /* Agrega otros estilos adicionales según sea necesario */
+    }
+    
+  
+  @media (max-width: 600px) {
+    .contenedor-login {
+      width: 90%; 
+      max-width: 100%; 
+      text-align: center;
+    }
+  
+    .titulo-login {
+      font-size: 24px; 
+      margin-bottom: 10px; 
+    }
+  
+    .login-usuario,
+    .login-input {
+      margin-bottom: 16px; 
+    }
+  
+    .login-boton {
+      padding: 8px;
+    }
+  }

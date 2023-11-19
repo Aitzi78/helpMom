@@ -1,0 +1,102 @@
+
+.entero{
+  width: 100%;
+  height: 700px;
+  
+  
+  background: linear-gradient(to left, rgba(0, 115, 230, 0.8), rgba(255, 255, 255, 0.9)); ;
+}
+.resultado-puntos {
+  width: 100%;
+   height: 100%;
+   display: flex;
+   justify-content: space-evenly;
+   font-family: fantasy;
+  
+}
+
+.resultado-puntos > img {
+      height: 100%;
+      max-height: 100%;
+     
+  
+}
+
+   
+    // Estilos específicos para el título
+  .titulo-resultado{
+    color: grey; 
+    font-size: 24px; // Tamaño de fuente del título
+    margin-bottom: 8px; // Agrega espacio entre el título y el mensaje
+  }
+  .baja > img {
+    width: 100%;
+    max-width: 100px;
+   
+    
+  }
+  
+  .media> img {
+    width: 100%;
+    max-width: 100px;
+  }
+  .alta > img {
+    width: 100%;
+    max-width: 100px;
+  }
+.fotoAcarrusel{
+  width: 80px;
+    height: 40px;
+    margin-top: 50px;
+    
+    padding: 10px 20px;
+    font-size: 16px;
+    border: #3498db;
+    color: #ffffff;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    background-color: rgb(0, 85, 255);
+    box-shadow: 0 4px 6px rgba(73, 69, 69, 0.1);
+    transition: background-color 0.3s ease;
+}
+  
+  
+  .boton-fotos-aviso {
+    width: 80px;
+    height: 30px;
+    margin-top: 600px;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: #3498db;
+    color: #ffffff;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    background-color: red;
+    box-shadow: 0 4px 6px rgba(73, 69, 69, 0.1);
+    transition: background-color 0.3s ease;
+  }
+  @media (max-width: 600px) {
+    .resultado-puntos > img {
+      max-height: 100%; 
+    }
+    .entero {
+      width: 100%;
+      min-height: 300px; 
+      background: linear-gradient(to left, rgba(0, 115, 230, 0.8), rgba(255, 255, 255, 0.9));
+    }
+    
+  
+    .titulo-resultado {
+      font-size: 20px; 
+    }
+
+  
+    .baja > img,
+    .media > img,
+    .alta > img {
+      max-width: 100px;
+      max-height: 100px; 
+    }
+  }
