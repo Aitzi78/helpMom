@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import '../../style/preguntas.scss';
 
-const PREGUNTAS_ENDPOINT = 'http://localhost:5000/api/Preguntas';
+const PREGUNTAS_ENDPOINT = 'https://helpmombackend-7f59d2e18206.herokuapp.com/api/Preguntas';
 
 export default function Preguntas() {
   const [preguntas, setPreguntas] = useState([]);

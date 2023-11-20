@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 
-const PREGUNTA_ENDPOINT = 'http://localhost:5000/api/Preguntas/';
-const RESPUESTA_ENDPOINT = 'http://localhost:5000/api/Respuestas/';
+const PREGUNTA_ENDPOINT = 'https://helpmombackend-7f59d2e18206.herokuapp.com/api/Preguntas/';
+const RESPUESTA_ENDPOINT = 'https://helpmombackend-7f59d2e18206.herokuapp.com/api/Respuestas/';
 
 export function useCuestionarioApi(indicePregunta) {
   /* Hook que devuelve preguntas y respuestas */
