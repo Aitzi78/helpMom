@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import '../../style/preguntas.scss';
 
-const PREGUNTAS_ENDPOINT = 'https://helpmombackend-7f59d2e18206.herokuapp.com/api/Preguntas';
+const PREGUNTAS_ENDPOINT = 'http://localhost:5000/api/preguntas';
 
 export default function Preguntas() {
   const [preguntas, setPreguntas] = useState([]);
@@ -38,10 +38,10 @@ export default function Preguntas() {
           <li key={pregunta.id} className='list-group-item'>
             {pregunta.titulo}
             <div className='action-buttons'>
-              <Link to={`/actualizar/${pregunta.idPreguntas}`}>
+              <Link to={`/actualizar/${pregunta.id}`}>
                 <button className='btn btn-actualizar'>Actualizar</button>
               </Link>
-              <Link to={`/borrar/${pregunta.idPreguntas}`}>
+              <Link to={`/borrar/${pregunta.id}`}>
                 <button className='btn btn-borrar'>Borrar</button>
               </Link>
             </div>

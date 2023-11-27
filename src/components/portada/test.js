@@ -79,16 +79,16 @@ export default function Test({
       <div className='opcionesContainer'>
       {respuestas.map((respuesta) => (
         <div
-          key={respuesta.idRespuestas}
+          key={respuesta.id}
           className='opcionContenedor'
-          onClick={() => handleRespuestaClick(respuesta.valorNumerico)}
+          onClick={() => handleRespuestaClick(respuesta.puntuacion)}
         >
           <img
-            src={fotos[respuesta.idRespuestas]}
-            alt={respuesta.textoRespuestas}
+            src={fotos[respuesta.id]}
+            alt={respuesta.titulo}
             className='imagen'
           />
-          <p className='texto'>{respuesta.textoRespuestas}</p>
+          <p className='texto'>{respuesta.titulo}</p>
         </div>
       ))}
      </div>

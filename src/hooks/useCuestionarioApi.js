@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 
-const PREGUNTA_ENDPOINT = 'https://helpmombackend-7f59d2e18206.herokuapp.com/api/Preguntas/';
-const RESPUESTA_ENDPOINT = 'https://helpmombackend-7f59d2e18206.herokuapp.com/api/Respuestas/';
+const PREGUNTAS_ENDPOINT = 'http://localhost:5000/api/preguntas/';
+const RESPUESTAS_ENDPOINT ='http://localhost:5000/api/respuestas/';
 
 export function useCuestionarioApi(indicePregunta) {
   /* Hook que devuelve preguntas y respuestas */
@@ -11,14 +11,14 @@ export function useCuestionarioApi(indicePregunta) {
   //console.log(numeroPregunta);
   useEffect(() => {
     const fetchPregunta = async () => {
-      const response = await fetch(PREGUNTA_ENDPOINT + indicePregunta);
+      const response = await fetch(PREGUNTAS_ENDPOINT + indicePregunta);
       const data = await response.json();
 
       setPregunta(data.titulo);
     };
 
     const fetchRespuestas = async () => {
-      const response = await fetch(RESPUESTA_ENDPOINT + indicePregunta);
+      const response = await fetch(RESPUESTAS_ENDPOINT + indicePregunta);
       const data = await response.json();
 
       setRespuestas(data);
