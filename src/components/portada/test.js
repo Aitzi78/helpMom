@@ -83,19 +83,11 @@ export default function Test({
           className='opcionContenedor'
           onClick={() => handleRespuestaClick(respuesta.puntuacion)}
         >
-          {respuesta.id > 15 ? (
-            <img
-              src={fotos[respuesta.id + 1]}
-              alt={respuesta.titulo}
-              className='imagen'
-            />
-          ) : (
-            <img
-              src={fotos[respuesta.id]}
-              alt={respuesta.titulo}
-              className='imagen'
-            />
-          )}
+          <img
+          src={fotos[respuesta.id]}
+          alt={respuesta.titulo}
+          className='imagen'
+        />
           <p className='texto'>{respuesta.titulo}</p>
         </div>
       ))}
