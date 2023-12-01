@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Redirect } from 'react-router-dom';
-const LOGIN_ENDPOINT = 'https://localhost:5000/api/auth/login';
+const LOGIN_ENDPOINT = 'https://helpmomback-26ddbfb8f00d.herokuapp.com/api/auth/login';
 
 export default function Login() {
   const [username, setUsername] = useState('');
