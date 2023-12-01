@@ -42,14 +42,14 @@ const fotos = {
   13: foto13,
   14: foto14,
   15: foto15,
-  16: foto16,
-  17: foto17,
-  18: foto18,
-  19: foto19,
-  20: foto20,
-  21: foto21,
-  22: foto22,
-  23: foto23,
+  17: foto16,
+  18: foto17,
+  19: foto18,
+  20: foto19,
+  21: foto20,
+  22: foto21,
+  23: foto22,
+  24: foto23,
 };
 
 export default function Test({
@@ -83,11 +83,19 @@ export default function Test({
           className='opcionContenedor'
           onClick={() => handleRespuestaClick(respuesta.puntuacion)}
         >
-          <img
-            src={fotos[respuesta.id]}
-            alt={respuesta.titulo}
-            className='imagen'
-          />
+          {respuesta.id > 15 ? (
+            <img
+              src={fotos[respuesta.id + 1]}
+              alt={respuesta.titulo}
+              className='imagen'
+            />
+          ) : (
+            <img
+              src={fotos[respuesta.id]}
+              alt={respuesta.titulo}
+              className='imagen'
+            />
+          )}
           <p className='texto'>{respuesta.titulo}</p>
         </div>
       ))}
